@@ -170,7 +170,7 @@ const Calendar = ({ user }: { user: oauth2_v2.Schema$Userinfo }) => {
           />
           <Navbar user={user} showModal={() => setShowModal(true)} />
           <Row>
-            <Col md={3}>
+            <Col className="d-none d-md-block" md={3}>
               <Sidebar
                 cals={cals as CalendarModel[]}
                 showModal={() => setShowModal(true)}
